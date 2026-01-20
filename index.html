@@ -51,6 +51,33 @@
   color: #6b7280;
   margin-top: 4px;
   }
+    
+.chapters-wrapper {
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 0 20px;
+}
+
+.chapters-toggle {
+  width: 100%;
+  background: #ffffff;
+  border: none;
+  border-radius: 8px;
+  padding: 16px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  text-align: left;
+}
+
+.chapters {
+  margin-top: 12px;
+}
+
+.chapters.hidden {
+  display: none;
+}
 
   </style>
 </head>
@@ -84,6 +111,21 @@
   </div>
 
 </div>
+
+  <script>
+  function toggleChapters() {
+    const chapters = document.getElementById("chapters");
+    const button = document.querySelector(".chapters-toggle");
+
+    chapters.classList.toggle("hidden");
+
+    if (chapters.classList.contains("hidden")) {
+      button.textContent = "Chapters ▸";
+    } else {
+      button.textContent = "Chapters ▾";
+    }
+  }
+</script>
 
 
 </body>
