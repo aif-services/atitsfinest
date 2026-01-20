@@ -9,45 +9,51 @@
       color: white;
       font-family: Helvetica, Arial, sans-serif;
       margin: 0;
-      padding: 0;
+      padding: 20px;
     }
 
-    .top-bar {
-      padding: 15px;
-      background-color: #111;
-      position: sticky;
-      top: 0;
-    }
-
-    .top-bar a {
-      color: #ccc;
+    a {
+      color: white;
       text-decoration: none;
     }
 
-    .top-bar a:hover {
-      text-decoration: underline;
+    .back {
+      color: #ccc;
+      display: inline-block;
+      margin-bottom: 20px;
     }
 
-    .reader {
-      max-width: 800px;
-      margin: 0 auto;
+    h1 {
+      margin-bottom: 20px;
     }
 
-    .reader img {
-      width: 100%;
+    .chapters {
+      max-width: 600px;
+    }
+
+    .chapter {
+      background-color: #1c1c1c;
+      padding: 15px;
+      border-radius: 6px;
+      margin-bottom: 10px;
       display: block;
+    }
+
+    .chapter:hover {
+      background-color: #2a2a2a;
     }
   </style>
 </head>
 
 <body>
 
-  <div class="top-bar">
-    <a href="index.html">← back to library</a>
-  </div>
+  <a href="index.html" class="back">← back to library</a>
 
-  <div class="reader">
-    <!-- webtoon images will go here -->
+  <h1>series one</h1>
+
+  <div class="chapters">
+    <a href="series-one-ch1.html" class="chapter">chapter 1</a>
+    <a href="#" class="chapter">chapter 2</a>
   </div>
 
 </body>
