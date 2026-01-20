@@ -41,12 +41,20 @@
     at its finest
   </header>
 
-  <div class="comic-container">
-    <!-- Comic pages go here -->
-    <img src="001.png" alt="Page 1">
-    <img src="002.png" alt="Page 2">
-    <img src="003.png" alt="Page 3">
-  </div>
+  <div class="comic-container" id="comic"></div>
+
+<script>
+  const totalPages = 11; // 👈 change this number only
+
+  const container = document.getElementById("comic");
+
+  for (let i = 1; i <= totalPages; i++) {
+    const img = document.createElement("img");
+    img.src = `pages/${String(i).padStart(3, "0")}.png`;
+    container.appendChild(img);
+  }
+</script>
+
 
 </body>
 </html>
