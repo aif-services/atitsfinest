@@ -34,11 +34,19 @@
 
 
     .series {
-      background-color: #1c1c1c;
-      padding: 20px;
-      text-align: center;
-      border-radius: 8px;
-    }
+  background-color: #1c1c1c;
+  padding: 20px;
+  text-align: center;
+  border-radius: 8px;
+  text-decoration: none;
+  color: white;
+  display: block;
+}
+
+.series:hover {
+  background-color: #2a2a2a;
+}
+
   </style>
 </head>
 
@@ -48,9 +56,10 @@
   <h2>library</h2>
 
   <div class="library">
-    <div class="series">series one</div>
-    <div class="series">series two</div>
+    <a href="series-one.html" class="series">series one</a>
+    <a href="series-two.html" class="series">series two</a>
   </div>
+
 
 </body>
 </html>
