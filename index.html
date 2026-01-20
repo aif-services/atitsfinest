@@ -1,21 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>at its finest</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f2f4f6;
+      color: #2b2b2b;
+    }
+
+    header {
+      background-color: #dbe7f0;
+      padding: 30px;
+      text-align: center;
+      font-size: 26px;
+      font-weight: bold;
+    }
+
+    .chapters {
+      max-width: 600px;
+      margin: 30px auto;
+      padding: 0 20px;
+    }
+
+    .chapter {
+      background: #ffffff;
+      border-radius: 8px;
+      padding: 16px;
+      margin-bottom: 12px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    }
+
+    .chapter a {
+      text-decoration: none;
+      color: #2b2b2b;
+      font-size: 18px;
+      display: block;
+    }
+  </style>
+</head>
+
 <body>
 
   <header>
     at its finest
   </header>
 
-  <div class="comic-container" id="comic"></div>
+  <div class="chapters">
+    <div class="chapter">
+      <a href="chapter-1/index.html">Chapter 1</a>
+    </div>
 
-  <script>
-    const totalPages = 11;
-    const container = document.getElementById("comic");
-
-    for (let i = 1; i <= totalPages; i++) {
-      const img = document.createElement("img");
-      img.src = `pages/${String(i).padStart(3, "0")}.png`;
-      img.alt = `Page ${i}`;
-      container.appendChild(img);
-    }
-  </script>
+    <div class="chapter">
+      <a href="chapter-2/index.html">Chapter 2</a>
+    </div>
+  </div>
 
 </body>
+</html>
