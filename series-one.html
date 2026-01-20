@@ -9,27 +9,46 @@
       color: white;
       font-family: Helvetica, Arial, sans-serif;
       margin: 0;
-      padding: 20px;
+      padding: 0;
     }
 
-    a {
+    .top-bar {
+      padding: 15px;
+      background-color: #111;
+      position: sticky;
+      top: 0;
+    }
+
+    .top-bar a {
       color: #ccc;
       text-decoration: none;
     }
 
-    a:hover {
+    .top-bar a:hover {
       text-decoration: underline;
+    }
+
+    .reader {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .reader img {
+      width: 100%;
+      display: block;
     }
   </style>
 </head>
 
 <body>
 
-  <a href="index.html">← back to library</a>
-  <h1>series one</h1>
+  <div class="top-bar">
+    <a href="index.html">← back to library</a>
+  </div>
 
-  <p>chapter 1 coming soon</p>
+  <div class="reader">
+    <!-- webtoon images will go here -->
+  </div>
 
 </body>
 </html>
-
